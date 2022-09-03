@@ -1,0 +1,32 @@
+Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#   Decrease Java thread stack sizes (-Xss)
+#   Set larger code cache with -XX:ReservedCodeCacheSize=
+# This output file may be truncated or incomplete.
+#
+
+-Dfile.encoding=UTF-8 --module-path=C:\Users\ayush\OneDrive\Documents\University Files\Semester 4\Lab\Project\Bank Management\Bank Management\build\classes bank.management.Loan_Application
+
+Host: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz, 12 cores, 11G,  Windows 11 , 64 bit Build 22000 (10.0.22000.708)
+Time: Fri Jul  8 15:26:24 2022 Pakistan Standard Time elapsed time: 6268.222704 seconds (0d 1h 44m 28s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000002989254fb40):  JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=6604, stack(0x000000fe69000000,0x000000fe69100000)]
+
+
+Current CompileTask:
+C1:6268222 1218  s    3       sun.java2d.loops.GraphicsPrimitiveMgr::
+[error occurred during error reporting (printing current compile task), id 0xe0000001, Out of Memory Error (t:\workspace\open\src\hotspot\share\memory\arena.cpp:184)]
+
+Stack: [0x000000fe69000000,0x000000fe69100000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x69804a]

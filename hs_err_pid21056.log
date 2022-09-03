@@ -1,0 +1,28 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  
+bank.management.Loan_Application
+
+Host: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz, 12 cores, 11G,  Windows 11 , 64 bit Build 22000 (10.0.22000.708)
+Time: Fri Jul  8 15:26:24 2022 Pakistan Standard Time elapsed time: 5755.663298 seconds (0d 1h 35m 55s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001e770cae5c0):  JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=22428, stack(0x0000008adfe00000,0x0000008adff00000)]
+
+
+Current CompileTask:
+C1:5755663 1275  s    3      
+[error occurred during error reporting (printing current compile task), id 0xe0000001, Out of Memory Error (t:\workspace\open\src\hotspot\share\memory\arena.cpp:184)]
+

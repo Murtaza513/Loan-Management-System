@@ -1,0 +1,37 @@
+#
+# There is insufficient memory for the Java Runtime Environment to continue.
+# Native memory allocation (malloc) failed to allocate 32744 bytes for Chunk::new
+# Possible reasons:
+#   The system is out of physical RAM or swap space
+#   The process is running with CompressedOops enabled, and the Java Heap may be blocking the growth of the native heap
+# Possible solutions:
+#   Reduce memory load on the system
+#   Increase physical memory or swap space
+#   Check if swap backing store is full
+#   Decrease Java heap size (-Xmx/-Xms)
+#   Decrease number of Java threads
+#
+#  
+# JRE version: Java(TM) SE Runtime Environment (18.0+36) (build 18+36-2087)
+# Java VM: Java HotSpot(TM) 64-Bit Server VM (18+36-2087, mixed mode, sharing, tiered, compressed oops, compressed class ptrs, g1 gc, windows-amd64)
+# No core dump will be written. Minidumps are not enabled by default on client versions of Windows
+#
+
+---------------  S U M M A R Y ------------
+
+Command Line: -Dfile.encoding=UTF-8 --module-path=C:\Users\ayush\OneDrive\Documents\University Files\Semester 4\Lab\Project\Bank Management\Bank Management\build\classes bank.management.Loan_Application
+
+Host: 11th Gen Intel(R) Core(TM) i5-11400H @ 2.70GHz, 12 cores, 11G,  Windows 11 , 64 bit Build 22000 (10.0.22000.708)
+Time: Fri Jul  8 15:26:24 2022 Pakistan Standard Time elapsed time: 5353.029540 seconds (0d 1h 29m 13s)
+
+---------------  T H R E A D  ---------------
+
+Current thread (0x000001f22adf5ae0):  JavaThread "C1 CompilerThread0" daemon [_thread_in_native, id=9632, stack(0x000000b3c2500000,0x000000b3c2600000)]
+
+
+Current CompileTask:
+C1:5353029 1335  s    3       sun.java2d.loops.GraphicsPrimitiveMgr::locatePrim (95 bytes)
+
+Stack: [0x000000b3c2500000,0x000000b3c2600000]
+Native frames: (J=compiled Java code, j=interpreted, Vv=VM code, C=native code)
+V  [jvm.dll+0x69804a]
